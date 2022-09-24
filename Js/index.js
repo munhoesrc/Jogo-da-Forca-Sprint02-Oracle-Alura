@@ -3,8 +3,10 @@ let palavras = ["BANANA", "ANA", "ALURA",
   "CIDADE", "RADIO", "CARRO",
   "FAZENDA", "AVENIDA", "UNIDADE",
   "SECULO", "SALADA", "MEDO",
-  "PASSARO", "URSO", "MEL", 'CHAPEU',
-  'CHAVE', 'EXPORTAR', 'ORACLE', 'JAVA'];
+  "PASSARO", "URSO", "MEL", "CHAPEU",
+  "CHAVE", "EXPORTAR", "ORACLE", "JAVA", "CUIA",
+"CELULAR", "CASA", "CARTEIRA", "LATA", "CARTEIRA", "ANEL",
+"CADEIRA", "MESA", "MALA"];
 let palavraSorteada = [];
 let contador = 0;
 let novaPalavra;

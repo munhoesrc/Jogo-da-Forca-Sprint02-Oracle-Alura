@@ -11,7 +11,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  background-image: linear-gradient(to bottom, rgb(201, 94, 58), #eff1f5);
+  /* background-image: linear-gradient(to bottom, rgb(201, 94, 58), #eff1f5); */
+  background-image: linear-gradient(to bottom, #E66082, #F0BE65, #9AD966, #65E5F0, #985DE5);
   z-index: 0;
 }
 
@@ -47,25 +48,31 @@ h1 {
   margin-top: 6rem;
   width: 33%;
   height: 60%;
-  background-color: rgb(252, 252, 252);
-  border: solid 6px #631f08;
+  /* background-color: rgb(252, 252, 252); */
+  background-image: linear-gradient(45deg, #E66082, #F0BE65, #9AD966, #65E5F0, #985DE5);
+  border: solid 6px black;
   border-radius: 20px;
   text-align: center;
   display: block;
   z-index: -5;
 }
 
-#img-home {
+.add-palavra {
+  margin-top: 6rem;
+}
+
+/* #img-home {
   height: 130px;
   width: 120px;
   margin-top: 1rem;
   padding-bottom: 1rem;
   margin-top: .5rem;
   padding-bottom: .5rem;
-}
+} */
 
 .button {
   font-family: 'Press Start 2P', cursive;
+  text-align: center;
   width: 11rem;
   height: 2.5rem;
   margin: 1rem;
@@ -75,8 +82,9 @@ h1 {
 }
 
 .button.blue {
-  background-color: #631f08;
+  background-color: green;
   color: white;
+  height: 7rem;
   padding: 20px;
   padding-bottom: 40px;
   animation-name: pulsar;
@@ -86,28 +94,29 @@ h1 {
 
 @keyframes pulsar {
   from {
-    box-shadow: 0 0 0px 0px #631f08;
+    box-shadow: 0 0 0px 0px #226308;
   }
 
   to {
-    box-shadow: 0 0 5px 10px #631f08;
+    box-shadow: 0 0 5px 10px #296308;
   }
 }
 
 .button.blue:hover {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.89);
-  color: #631f08
+  color: black;
 }
 
 .button.white {
   background-color: white;
-  color: #631f08;
+  color: rgb(0, 0, 0);
+  width: 16rem;
 }
 
 .button.white:hover {
   cursor: pointer;
-  background-color: #631f08;
+  background-color: black;
   color: white;
 }
 
@@ -161,8 +170,8 @@ h1 {
 }
 
 #palavra-digitada {
-  border: solid 2px #631f08;
-  width: 11rem;
+  border: solid 2px black;
+  width: 16rem;
   height: 2rem;
   border-radius: 15px;
   outline: 0;
@@ -173,10 +182,11 @@ h1 {
   width: 3rem;
   height: 3rem;
   border: solid 1px black;
-  background-color: #c95e3a9f;
+  background-color: #a35de5;
+  font-family: 'Press Start 2P', cursive;
   border-radius: 5px;
   font-size: 20px;
-  color: rgb(20, 2, 68);
+  color: black;
   margin-bottom: 3px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
 }
@@ -189,7 +199,7 @@ h1 {
 #butons-letras {
   width: 20%;
   height: 25%;
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-right: 2REM;
 }
 
@@ -225,7 +235,7 @@ h1 {
 
 /* Para midias moveis */
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
   header {
     display: flex;
@@ -296,7 +306,7 @@ h1 {
     width: 70%;
     height: 50%;
     background-color: rgb(252, 252, 252);
-    border: solid 6px #631f08;
+    border: solid 6px black;
     border-radius: 20px;
     text-align: center;
     display: block;
@@ -306,20 +316,34 @@ h1 {
   #win {
     position: absolute;
     background-color: rgb(117, 117, 117);
-    margin-top: 6rem;
-    margin-left: 5rem;
-    text-align: center;
+    margin-top: 8rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: block;
-    z-index: -3;
+    z-index: -2;
+  }
+
+  #winB {
+    /* border: 1px solid black; */
+    margin-right: 2.5rem;
+  }
+
+  h3 {
+    border: 1px solid black;
+    margin-right: 2rem;
   }
 
   #over {
     position: absolute;
     background-color: rgb(117, 117, 117);
-    margin-left: 4rem;
     margin-top: 8em;
-    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
     display: block;
     z-index: -2;
+  }
+
+  .restart {
+    margin-right: 2.5rem;
   }
 }
