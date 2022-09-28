@@ -203,25 +203,25 @@ h1 {
   margin-right: 2REM;
 }
 
-
-
 #over {
   border: 5px dashed black;
+  background-color: grey;
   position: absolute;
-  padding-left: 2em;
-  margin-left: 30rem;
+  padding: 2em;
   margin-top: 7em;
+  margin-left: 35rem;
   text-align: center;
   display: block;
-  z-index: -2;
+  z-index: -3;
 }
 
 #win {
   border: 5px dashed black;
+  background-color: grey;
   position: absolute;
-  padding-left: 2em;
+  padding: 2em;
   margin-top: 7rem;
-  margin-left: 33rem;
+  margin-left: 35rem;
   text-align: center;
   display: block;
   z-index: -3;
