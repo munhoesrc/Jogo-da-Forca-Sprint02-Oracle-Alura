@@ -233,7 +233,7 @@ h1 {
   gap: 25px;
 }
 
-/* Para midias moveis */
+/* Apartir daqui estilizaçã para midias moveis */
 
 @media only screen and (max-width: 600px) {
 
@@ -312,6 +312,14 @@ h1 {
     display: block;
     z-index: -5;
   }
+
+  .add-palavra {
+    margin-top: 2em;
+  }
+
+  .button.white {
+    margin-left: 10px;
+  }  
 
   #win {
     position: absolute;
